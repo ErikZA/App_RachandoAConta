@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemMenuTema1"
+        android:checkable="true"
+        android:title="@string/itemMenuItem1" />
+    <item
+        android:id="@+id/menuItemInformacao"
+        android:icon="@android:drawable/ic_popup_disk_full"
+        android:title="@string/menuItemInformacao"
+        app:showAsAction="always" />
+    <group />
+    <item
+        android:id="@+id/itemMenuTema2"
+        android:checkable="true"
+        android:title="@string/itemMenuTema2"
+        app:showAsAction="never" />
+</menu>

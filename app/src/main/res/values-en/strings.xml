@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RachandoAConta</string>
+    <string name="ButtomCancelar">Cancel</string>
+    <string name="CampoVazio">An establishment has not been informed</string>
+    <string name="CampoVazioRadio">Account status was not reported</string>
+    <string name="NomeItem">Enter the item name</string>
+    <string name="RadioButomFechada">Closed account</string>
+    <string name="RadioButomsituacaoAberta">Open Account</string>
+    <string name="TituloLstaContas">List of accounts</string>
+    <string name="TituloNovaConta">New account</string>
+    <string name="ValorItem">Enter the unit value of the item</string>
+    <string name="buttonSalvar">To save</string>
+    <string name="checkBoxDezPorCento">Add 10% of Waiter</string>
+    <string name="erro">Error inserting item</string>
+    <string name="cor_fundo" translatable="false"></string>
+    <string name="erro2">Try again</string>
+    <string name="info_iniciais">"Developer: Erik Henrique Zambel Application focused on controlling spending in Boteco "</string>
+    <string name="itemMenuItem1">Background - 1</string>
+    <string name="itemMenuTema2">Background - 2</string>
+    <string name="mensagem_confirma">Notice</string>
+    <string name="menuItemInformacao">Information</string>
+    <string name="menuItemNovoItem">New Item</string>
+    <string name="nao">No</string>
+    <string name="salvoItem">Item saved successfully</string>
+    <string name="sim">Yes</string>
+    <string name="textoFecharConta">Close the account</string>
+    <string name="textoItemMenuAlterar">Change</string>
+    <string name="textoMenuItemAbrir">Open</string>
+    <string name="textoNome">Establishment</string>
+    <string name="textoPessoas">Amount of people</string>
+    <string name="textoSituacao">Account Status</string>
+    <string name="textoValorTotal">Amount : </string>
+    <string name="texto_DiminuirumItem">Decrease</string>
+    <string name="texto_aumentar">Increase</string>
+    <string name="textoitemMenuExcluir">Delete</string>
+    <string name="titulo_confirma">Returning to the Home screen</string>
+    <string name="tituloinformacao">Information</string>
+    <string name="txtHistorico">Historic</string>
+    <string name="txtNovaConta">New account</string>
+    <string name="valorDividido">Divided in</string>
+    <string name="Aberta">Open</string>
+    <string name="Fechada">closed</string>
+    <string name="itemMenuAbrir">Open</string>
+    <string name="itemMenuFechar">closed</string>
+
+</resources>

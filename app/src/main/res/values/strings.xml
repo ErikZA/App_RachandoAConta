@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">RachandoAConta</string>
+    <string name="txtHistorico">Historico</string>
+    <string name="txtNovaConta">Nova Conta</string>
+    <string name="menuItemInformacao">Informações</string>
+    <string name="itemMenuItem1">Plano de fundo - 1</string>
+    <string name="itemMenuTema2">Plano de fundo - 2</string>
+    <string name="prefencias_cores" translatable="false">com.erikzambeligmail.rachandoaconta.utils.PrincipalActivity</string>
+    <string name="cor_fundo" translatable="false">collor_down</string>
+    <string name="info_iniciais">
+        <item>Desenvolvedor: Erik Henrique Zambeli</item>
+        <item>Aplicativo voltado para controlar</item>
+        <item>os gastos no Boteco </item>
+    </string>
+    <string name="NomeItem">Entre com o nome do item</string>
+    <string name="ValorItem">Entre com o valor unitario do item em R$</string>
+    <string name="tituloinformacao">Informação</string>
+    <string name="TituloNovaConta">Nova Conta</string>
+    <string name="CampoVazio">Não foi informado um Estabelecimento</string>
+    <string name="CampoVazioRadio">Não foi informada a situação da conta</string>
+    <string name="mensagem_confirma">Aviso</string>
+    <string name="titulo_confirma">Voltando a tela Principal</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="textoNome">Estabelecimento</string>
+    <string name="textoPessoas">Quantidade de Pessoas</string>
+    <string name="checkBoxDezPorCento">Adicionar 10% do Garçom</string>
+    <string name="textoSituacao">Situação da Conta</string>
+    <string name="RadioButomsituacaoAberta">Conta Aberta</string>
+    <string name="RadioButomFechada">Conta Fechada</string>
+    <string name="buttonSalvar">Salvar</string>
+    <string name="ButtomCancelar">Cancelar</string>
+    <string name="menuItemNovoItem">Novo Item</string>
+    <string name="title_activity_conta_aberta_" translatable="false">ContaAberta_Activity</string>
+    <string name="texto_DiminuirumItem">Diminuir</string>
+    <string name="texto_aumentar">Aumentar</string>
+    <string name="textoValorTotal">Valor Total : </string>
+    <string name="erro">Erro ao inserir o item</string>
+    <string name="erro2">Tente novamente</string>
+    <string name="erro3">Nenhum item inserido</string>
+    <string name="salvoItem">Item salvo com sucesso</string>
+    <string name="textoFecharConta">Fechar a Conta</string>
+    <string name="textoItemMenuAlterar">Alterar</string>
+    <string name="textoitemMenuExcluir">Excluir</string>
+    <string name="TituloLstaContas">Lista de contas</string>
+    <string name="textoMenuItemAbrir">Abrir</string>
+    <string name="valorDividido">Dividido em</string>
+    <string name="Aberta">Aberta</string>
+    <string name="Fechada">Fechada</string>
+    <string name="itemMenuAbrir">Abrir</string>
+    <string name="itemMenuFechar">Fechar</string>
+</resources>
