@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">RachandoAConta</string>
+    <string name="app_name" translatable="false">NewRachandoAConta</string>
     <string name="txtHistorico">Historico</string>
     <string name="txtNovaConta">Nova Conta</string>
     <string name="menuItemInformacao">Informações</string>

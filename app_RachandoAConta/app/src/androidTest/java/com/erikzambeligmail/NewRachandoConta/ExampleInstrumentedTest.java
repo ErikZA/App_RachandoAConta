@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta;
+package com.erikzambeligmail.NewRachandoConta;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

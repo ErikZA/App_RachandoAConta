@@ -1,19 +1,17 @@
-package com.erikzambeligmail.rachandoaconta.persistencia;
+package com.erikzambeligmail.NewRachandoConta.persistencia;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.erikzambeligmail.rachandoaconta.modelo.Conta;
-import com.erikzambeligmail.rachandoaconta.modelo.Item;
+import com.erikzambeligmail.NewRachandoConta.modelo.Conta;
+import com.erikzambeligmail.NewRachandoConta.modelo.Item;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by erik_ on 13/11/2017.

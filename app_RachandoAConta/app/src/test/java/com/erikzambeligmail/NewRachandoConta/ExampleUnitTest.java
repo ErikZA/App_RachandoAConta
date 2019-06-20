@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta;
+package com.erikzambeligmail.NewRachandoConta;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta.modelo;
+package com.erikzambeligmail.NewRachandoConta.modelo;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;

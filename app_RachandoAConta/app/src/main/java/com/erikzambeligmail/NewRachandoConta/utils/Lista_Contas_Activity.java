@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta.utils;
+package com.erikzambeligmail.NewRachandoConta.utils;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,11 +13,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.erikzambeligmail.rachandoaconta.R;
-import com.erikzambeligmail.rachandoaconta.modelo.Conta;
-import com.erikzambeligmail.rachandoaconta.persistencia.DataBaseHelper;
+import com.erikzambeligmail.NewRachandoConta.R;
+import com.erikzambeligmail.NewRachandoConta.modelo.Conta;
+import com.erikzambeligmail.NewRachandoConta.persistencia.DataBaseHelper;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lista_Contas_Activity extends AppCompatActivity {
@@ -84,14 +85,34 @@ public class Lista_Contas_Activity extends AppCompatActivity {
 
         for(Conta aux : lista){
             if(aux.getSituacao()){
-                aux.setEstabelecimento(aux.getEstabelecimento()+" - (ABERTA)");
+                if(aux.getEstabelecimento().contains("(FECHADA)")){
+                   String[] parser = aux.getEstabelecimento().split("-");
+                    aux.setEstabelecimento(parser[0]+"-(ABERTA)");
+                } else {
+                    String[] parser = aux.getEstabelecimento().split("-");
+                    aux.setEstabelecimento(parser[0] + "-(ABERTA)");
+                }
             } else{
-                aux.setEstabelecimento(aux.getEstabelecimento()+" - (FECHADA)");
+                if(aux.getEstabelecimento().contains("(ABERTA)")){
+                    String[] parser = aux.getEstabelecimento().split("-");
+                    aux.setEstabelecimento(parser[0]+"-(FECHADA)");
+                } else {
+                    String[] parser = aux.getEstabelecimento().split("-");
+                    aux.setEstabelecimento(parser[0] + "-(FECHADA)");
+                }
+            }
+            try {
+                DataBaseHelper conexao =
+                        DataBaseHelper.getInstance(this);
+                conexao.getContaDao().update(aux);
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
         //listaAdapter = new MeuAdapterContas(this,lista);
         listaAdapterB = new ArrayAdapter<Conta>(this,android.R.layout.simple_list_item_1,lista);
         listView.setAdapter(listaAdapterB);
+        //listaOpcional = null;
     }
 
     private void pegaDados() {
@@ -118,7 +139,7 @@ public class Lista_Contas_Activity extends AppCompatActivity {
         info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         Conta pos = (Conta) listView.getItemAtPosition(info.position);
-        switch(item.getItemId()){
+        switch(item.getItemId()) {
 
             case R.id.itemMenuExcluir:
                 try {
@@ -131,6 +152,7 @@ public class Lista_Contas_Activity extends AppCompatActivity {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+                popularLista();
                 return true;
             case R.id.itemMenuAbrir:
                 try {
@@ -142,18 +164,22 @@ public class Lista_Contas_Activity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 listaAdapterB.notifyDataSetChanged();
+                popularLista();
                 return true;
             case R.id.itemMenuFechar:
-                try{
-                DataBaseHelper conexao =
-                        DataBaseHelper.getInstance(this);
-                pos.setSituacao(false);
-                conexao.getContaDao().update(pos);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        listaAdapterB.notifyDataSetChanged();
+                try {
+                    DataBaseHelper conexao =
+                            DataBaseHelper.getInstance(this);
+                    pos.setSituacao(false);
+                    conexao.getContaDao().update(pos);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                listaAdapterB.notifyDataSetChanged();
+                popularLista();
+                return true;
             default:
+                popularLista();
                 return super.onContextItemSelected(item);
         }
     }

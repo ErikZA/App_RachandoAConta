@@ -5,7 +5,7 @@
     android:id="@+id/layoutListaContas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.erikzambeligmail.rachandoaconta.utils.Lista_Contas_Activity">
+    tools:context="com.erikzambeligmail.NewRachandoConta.utils.Lista_Contas_Activity">
 
     <ListView
         android:id="@+id/listViewContas"

@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta.utils;
+package com.erikzambeligmail.NewRachandoConta.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.erikzambeligmail.rachandoaconta.R;
+import com.erikzambeligmail.NewRachandoConta.R;
 
 public class PrincipalActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta.utils;
+package com.erikzambeligmail.NewRachandoConta.utils;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,12 +15,9 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.erikzambeligmail.rachandoaconta.R;
-import com.erikzambeligmail.rachandoaconta.modelo.Conta;
-import com.erikzambeligmail.rachandoaconta.modelo.Item;
-import com.erikzambeligmail.rachandoaconta.persistencia.DataBaseHelper;
-
-import java.util.List;
+import com.erikzambeligmail.NewRachandoConta.R;
+import com.erikzambeligmail.NewRachandoConta.modelo.Conta;
+import com.erikzambeligmail.NewRachandoConta.persistencia.DataBaseHelper;
 
 public class ContaActivity extends AppCompatActivity {
 

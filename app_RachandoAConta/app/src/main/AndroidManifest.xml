@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.erikzambeligmail.rachandoaconta">
+    package="com.erikzambeligmail.NewRachandoConta">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".utils.PrincipalActivity">
+        <activity android:name="com.erikzambeligmail.NewRachandoConta.utils.PrincipalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".utils.InfoActivity" />
-        <activity android:name=".utils.ContaActivity" />
+        <activity android:name="com.erikzambeligmail.NewRachandoConta.utils.InfoActivity" />
+        <activity android:name="com.erikzambeligmail.NewRachandoConta.utils.ContaActivity" />
         <activity
             android:name=".utils.ContaAberta_Activity"
             android:label="@string/title_activity_conta_aberta_"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".utils.Lista_Itens_Activity" />
-        <activity android:name=".utils.Lista_Contas_Activity"></activity>
+        <activity android:name="com.erikzambeligmail.NewRachandoConta.utils.Lista_Itens_Activity" />
+        <activity android:name="com.erikzambeligmail.NewRachandoConta.utils.Lista_Contas_Activity"></activity>
     </application>
 
 </manifest>

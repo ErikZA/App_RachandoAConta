@@ -5,7 +5,7 @@
     android:id="@+id/contaActivityID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.erikzambeligmail.rachandoaconta.utils.PrincipalActivity">
+    tools:context="com.erikzambeligmail.NewRachandoConta.utils.PrincipalActivity">
 
     <TextView
         android:id="@+id/textViewNome"

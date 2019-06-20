@@ -1,23 +1,18 @@
-package com.erikzambeligmail.rachandoaconta.utils;
+package com.erikzambeligmail.NewRachandoConta.utils;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.LayoutAnimationController;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.erikzambeligmail.rachandoaconta.R;
-import com.erikzambeligmail.rachandoaconta.modelo.Conta;
-import com.erikzambeligmail.rachandoaconta.modelo.Item;
-import com.erikzambeligmail.rachandoaconta.persistencia.DataBaseHelper;
+import com.erikzambeligmail.NewRachandoConta.R;
+import com.erikzambeligmail.NewRachandoConta.modelo.Conta;
+import com.erikzambeligmail.NewRachandoConta.modelo.Item;
+import com.erikzambeligmail.NewRachandoConta.persistencia.DataBaseHelper;
 
-import java.lang.reflect.Array;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

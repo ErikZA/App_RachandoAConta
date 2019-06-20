@@ -1,4 +1,4 @@
-package com.erikzambeligmail.rachandoaconta.utils;
+package com.erikzambeligmail.NewRachandoConta.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,10 +17,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.erikzambeligmail.rachandoaconta.R;
-import com.erikzambeligmail.rachandoaconta.modelo.Conta;
-import com.erikzambeligmail.rachandoaconta.modelo.Item;
-import com.erikzambeligmail.rachandoaconta.persistencia.DataBaseHelper;
+import com.erikzambeligmail.NewRachandoConta.R;
+import com.erikzambeligmail.NewRachandoConta.modelo.Conta;
+import com.erikzambeligmail.NewRachandoConta.modelo.Item;
+import com.erikzambeligmail.NewRachandoConta.persistencia.DataBaseHelper;
 
 import java.sql.SQLException;
 import java.text.NumberFormat;
@@ -117,14 +117,15 @@ public class Lista_Itens_Activity extends AppCompatActivity {
         DataBaseHelper conexao = DataBaseHelper.getInstance(this);
         conta = conexao.getContaDao().queryForId(ID);
         } catch (SQLException e) {
-           Toast.makeText(this, getString(R.string.erro) + getString(R.string.erro2)+e.getMessage(), Toast.LENGTH_SHORT).show();
-         e.printStackTrace();
+           Toast.makeText(this, getString(R.string.erro) +
+                   getString(R.string.erro2)+e.getMessage(),
+                   Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
         }
         if(conta.getSituacao())
         setTitle(conta.getEstabelecimento()+" ("+getString(R.string.Aberta)+")");
         else
         setTitle(conta.getEstabelecimento()+" ("+getString(R.string.Fechada)+")");
-
     }
 
     @Override
