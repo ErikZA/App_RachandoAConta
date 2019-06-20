@@ -8,7 +8,7 @@
     <string name="prefencias_cores" translatable="false">com.erikzambeligmail.rachandoaconta.utils.PrincipalActivity</string>
     <string name="cor_fundo" translatable="false">collor_down</string>
     <string name="info_iniciais">
-        <item>Desenvolvedor: Erik Henrique Zambeli</item>
+        <item>Desenvolvedor: Thiago</item>
         <item>Aplicativo voltado para controlar</item>
         <item>os gastos no Boteco </item>
     </string>

@@ -82,6 +82,13 @@ public class Lista_Contas_Activity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        for(Conta aux : lista){
+            if(aux.getSituacao()){
+                aux.setEstabelecimento(aux.getEstabelecimento()+" - (ABERTA)");
+            } else{
+                aux.setEstabelecimento(aux.getEstabelecimento()+" - (FECHADA)");
+            }
+        }
         //listaAdapter = new MeuAdapterContas(this,lista);
         listaAdapterB = new ArrayAdapter<Conta>(this,android.R.layout.simple_list_item_1,lista);
         listView.setAdapter(listaAdapterB);

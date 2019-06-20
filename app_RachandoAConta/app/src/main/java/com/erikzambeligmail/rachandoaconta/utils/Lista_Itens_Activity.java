@@ -164,6 +164,11 @@ public class Lista_Itens_Activity extends AppCompatActivity {
                     return true;
                 default:
                     if (item != null) {
+
+
+
+
+
                         Toast.makeText(this, R.string.titulo_confirma, Toast.LENGTH_SHORT).show();
                         setResult(Activity.RESULT_CANCELED);
                         finish();

@@ -15,7 +15,7 @@
     <string name="erro">Error inserting item</string>
     <string name="cor_fundo" translatable="false"></string>
     <string name="erro2">Try again</string>
-    <string name="info_iniciais">"Developer: Erik Henrique Zambel Application focused on controlling spending in Boteco "</string>
+    <string name="info_iniciais">"Developer: Thiago Application focused on controlling spending in Boteco "</string>
     <string name="itemMenuItem1">Background - 1</string>
     <string name="itemMenuTema2">Background - 2</string>
     <string name="mensagem_confirma">Notice</string>
